@@ -2,7 +2,7 @@ import type { Connect } from 'vite'
 import type { IncomingMessage, ServerResponse } from 'node:http'
 import type { ResultSetHeader, RowDataPacket } from 'mysql2'
 import type { PoolConnection } from 'mysql2/promise'
-import { pool } from './db'
+import { pool } from './database/db'
 
 const API_PATH = '/api/name-occurrence'
 
