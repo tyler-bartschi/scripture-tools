@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite'
+import type { PreviewServer, ViteDevServer } from 'vite'
 import react from '@vitejs/plugin-react'
 import { registerApiRoutes } from './server/api'
 
 const databasePlugin = () => ({
   name: 'vite:scripture-database',
-  configureServer(server) {
+  configureServer(server: ViteDevServer) {
     registerApiRoutes(server.middlewares)
   },
-  configurePreviewServer(server) {
+  configurePreviewServer(server: PreviewServer) {
     registerApiRoutes(server.middlewares)
   },
 })

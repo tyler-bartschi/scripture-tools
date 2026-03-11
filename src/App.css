@@ -9,6 +9,42 @@
     #030712;
 }
 
+.primary-nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f7f8ff;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-btn-active {
+  background: linear-gradient(135deg, #5fd7ff, #6e7bff);
+  color: #03060d;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(94, 195, 255, 0.35);
+}
+
+.placeholder-panel p {
+  margin: 0;
+  color: #d0d2ff;
+  font-size: 1.05rem;
+}
+
 .hero {
   max-width: 720px;
 }
